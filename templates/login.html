@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="content">
+    <h2>Login</h2>
+</div>
+
+<br>
+<br>
+{% if msg %}
+
+<h3 style="color: red;">{{msg}}</h3>
+
+{% endif %}
+
+<form action="" method="post">
+    <input type="email" placeholder="Email" name="email" value="{{request.form.email}}">
+    <input type="password" placeholder="password" name="password">
+    <input type="submit">
+</form>
+
+
+
+{% endblock %}

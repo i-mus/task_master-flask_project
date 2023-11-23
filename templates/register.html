@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="content">
+    <h2>Register</h2>
+</div>
+
+<br>
+<br>
+{% if msg %}
+<h3 style="color: red;">{{msg}}</h3>
+{% endif %}
+<form action="" method="post">
+    <input type="text" placeholder="name" name="name">
+    <input type="email" placeholder="email" name="email">
+    <input type="password" placeholder="password" name="password">
+    <input type="text" placeholder="retype ur password" name="cpassword">
+    <input type="submit">
+</form>
+
+{% endblock %}
